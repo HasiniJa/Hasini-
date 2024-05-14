@@ -1,0 +1,6 @@
+INFO:root:logging test
+INFO:root:Test Run: 2024-05-13 22:51:25.204297
+WARNING:root:lab1a.py: Failures encountered.
+INFO:root:done.
+WARNING:root:lab1b.py: Failures encountered.
+INFO:root:done.
