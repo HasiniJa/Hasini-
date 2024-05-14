@@ -1,3 +1,7 @@
+# Name : Hasini Jayasekara
+# Student ID : 165513235
+
+
 '''Welcome to PRG600                             
 Enter your name :Eric
 Enter your student ID: 123456789

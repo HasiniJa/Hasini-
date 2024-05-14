@@ -1,5 +1,5 @@
 '''
-Name: Hasini
+Name: Hasini Jayasekara
 Student ID : 135513235
 Description: Lab 01 - Question 01
 '''
