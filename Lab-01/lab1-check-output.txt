@@ -1,6 +1,8 @@
 INFO:root:logging test
-INFO:root:Test Run: 2024-05-14 09:48:14.152447
-WARNING:root:lab1a.py: Failures encountered.
+INFO:root:Test Run: 2024-05-14 10:29:06.309251
+INFO:root:lab1a.py: test successful.
+INFO:root:lab1a.py 51ec12230244d3eb880ff392d01f378d
 INFO:root:done.
-WARNING:root:lab1b.py: Failures encountered.
+INFO:root:lab1b.py: test successful.
+INFO:root:lab1b.py 801a9f37469dfb33da16f0e7a52ba5d8
 INFO:root:done.
