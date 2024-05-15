@@ -5,22 +5,23 @@
 tax_income = input(" Enter your gross income")
 dependent_count = input(" Enter number of dependents")
 
-gross_income = float(tax_income)
-dependent = float(dependent_count)
-standard_deduction = 10000
-dependent_deduction_amount = 2000
-dependent_deduction = dependent * float(dependent_deduction_amount)
 
-taxable_income = gross_income - (standard_deduction + dependent_deduction)
+gross_income = float(tax_income)                                    #converting the variables in to float values
+dependent = float(dependent_count)                                  #converting the variables in to float values
+standard_deduction = 10000                                          #defining standard deduction amount
+dependent_deduction_amount = 2000                                   #defining deduction amount for dependent
+dependent_deduction = dependent * float(dependent_deduction_amount) #calculation for the dependent deduction
 
-if(taxable_income < 32000 ):
-  tax_rate1 = 0.1
-  result = taxable_income*tax_rate1
-  if(result <0):
+taxable_income = gross_income - (standard_deduction + dependent_deduction) # calculation for the taxable income
 
-   print("The total tax is zero")
+if(taxable_income < 32000 ):                                        #checks the taxable income is less than 32000
+  tax_rate1 = 0.1                                                   #define the tax rate 
+  result = taxable_income*tax_rate1                                 #calculating the tax income
+  if(result <0):                                                    #check if the result is a negative value
+
+   print("The total tax is zero")      #print statement
   else:
-   print(" The total tax is "+str(result))
+   print(" The total tax is "+str(result))                          #if result value is not a negative value then it prints the total tax amount
  
 
 elif(taxable_income >= 32000) and (taxable_income < 64000):
