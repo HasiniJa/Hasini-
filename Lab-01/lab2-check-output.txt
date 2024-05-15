@@ -1,0 +1,15 @@
+INFO:root:logging test
+INFO:root:Test Run: 2024-05-15 00:03:26.580639
+ERROR:root:Traceback (most recent call last):
+  File "D:\Github\Classfile\Hasini-\Lab-01\lab2a.py", line 16, in <module>
+    print(" The result of "+user_int1+"plus"+user_int2+" is :"+result)
+          ~~~~~~~~~~~~~~~~~^~~~~~~~~~
+TypeError: can only concatenate str (not "int") to str
+
+WARNING:root:lab2a.py: Failures encountered.
+INFO:root:done.
+WARNING:root:lab2b.py: Failures encountered.
+INFO:root:done.
+INFO:root:challenge2.py: test successful.
+INFO:root:challenge2.py 4d65aafe322e4f89b0796db5ad45057c
+INFO:root:done.
