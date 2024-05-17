@@ -5,16 +5,16 @@
 tax_income = input("Enter your gross income: ")
 dependent_count = input(" Enter number of dependents: ")
 
-
-gross_income = float(tax_income)                                    #converting the variables in to float values
-dependent = float(dependent_count)                                  #converting the variables in to float values
+ #converting the variables in to float values
+gross_income = float(tax_income)                                   
+dependent = float(dependent_count)                                  
 standard_deduction = 10000                                          #defining standard deduction amount
 dependent_deduction_amount = 2000                                   #defining deduction amount for dependent
 dependent_deduction = dependent * float(dependent_deduction_amount) #calculation for the dependent deduction
 
 taxable_income = gross_income - (standard_deduction + dependent_deduction) # calculation for the taxable income
 
-if(gross_income < 32000 ):                                        #checks the taxable income is less than 32000
+if(gross_income < 32000 ):                                        #checks the gross income is less than 32000
   tax_rate1 = 0.1                                                   #define the tax rate 
   result = taxable_income*tax_rate1                                 #calculating the tax income
   if(result <0):                                                    #check if the result is a negative value
