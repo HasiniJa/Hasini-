@@ -17,26 +17,45 @@ Quiz over. You scored 50.0%.
 '''
 #defining num variable
 from random import randint
-num1 = randint(1,10)
-num2 = randint(1,10)
-result= num1+num2
 
-user_input = ("Enter any number to continue 's' to skip or 'q' to quit:")
-print(user_input)
-
-while result !=user_input :
-    if user_input == 's':
-        print("Question skipped. 0 points awarded.")
-        break
-    elif user_input == 'q':
-        print("Question skipped. 0 points awarded.")
-        break
-    elif user_input != result:
-        print("Incorrect. Try again.")
-    else:
-        grade=int(grade)+1
-        finalgrade= grade/4*100
-        print(finalgrade)
-        print("Correct! You have been awarded 1 point!") 
-        print("You received a grade of "+str(finalgrade)+"%.")
+result = 0
+answer = str(result)
+grade = 0
+finalgrade=0
     
+while result != 'q':
+     num1 = randint(1,10)
+     num2 = randint(1,10)
+     user_input = input("Enter the answer to "+str(num1)+" + "+str(num2)+", or press 's' to skip or 'q' to quit: ") 
+     result = num1+num2
+     
+     if user_input == 's':
+        print("Question skipped. 0 points awarded. ")
+        break
+     elif user_input =='q':
+         print("Quiz over. You scored "+str(finalgrade)+"%.")
+         break
+     else:
+         answer= int(user_input)
+     if  answer== result:
+         print("Correct! You have been awarded 1 point!") 
+         grade=int(grade)+1
+         finalgrade= grade/4*100
+     
+     else:
+          print("Incorrect. Try again.")
+        
+        
+         
+         
+     
+        
+         
+
+        
+         
+    
+    
+    
+        
+       
