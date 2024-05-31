@@ -18,20 +18,20 @@ from random import randint
 secret = randint(1,10)
 
 while True:
- user_input =input("Guess a number between 1 and 10: ")
+ user_input =input("Enter a number between 1 and 10: ")
 
  if user_input .isnumeric():
     user_guess= int(user_input)
  else:
    
-   print("Error: Not a Number. ")
-   print("Please enter a valid number between 1 and 10: ")
+   print("Error: not a number or out of bounds. ")
+   print("Enter a number between 1 and 10: ")
    continue
    
  
  if user_guess < 1 or user_guess > 10:
-     print("Error: entered number is Out of bounds. ")
-     print("Please enter a valid number between 1 and 10: ")
+     print("Error: not a number or out of bounds. ")
+     print("Enter a number between 1 and 10: ")
  elif user_guess == secret:
      print("Correct! You win. ")
      break

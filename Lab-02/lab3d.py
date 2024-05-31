@@ -17,8 +17,7 @@ secret = randint(1,10)
 user_input =input("Guess a number between 1 and 10: ")
 user_guess=int(user_input)
 
-while user_guess < 10:
-  
+while True:
 
    if user_guess == secret:
      print("Correct! You win. ")
