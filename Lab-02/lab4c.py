@@ -23,27 +23,30 @@ def rtrn_circle_area(radius):
 
  return math.pi * radius **2
  
-
-while True:
- radius = input("Enter a radius between 0 and 1999. Press Enter to exit: ")
- input_val = 0
-
- if radius == "" :
-  print ("Program was Cancelled. ")
-  break
+def main():
+  while True:
+   radius = input("Enter a radius between 0 and 1999. Press Enter to exit: ")
+   input_val = 0
+  
+   if radius == "" :
+    print ("Program was Cancelled. ")
+    break
  
- elif radius == isinstance(radius,str) : 
-   print ("Error. Out of bounds. ")
-   print ("Enter a radius between 0 and 1999. ") 
- else:
+   elif radius == isinstance(radius,str) : 
+     print ("Error. Out of bounds. ")
+     print ("Enter a radius between 0 and 1999. ") 
+   else:
     input_val += float(radius)
     
- if input_val < 0 or input_val > 1999 :
+   if input_val < 0 or input_val > 1999 :
     print ("Error. Out of bounds. ")
     print ("Enter a radius between 0 and 1999. ")
- else:
-  rtrn_circle_area(input_val)
 
-if __name__ == "__main__":
-  print("Radius: "+str(input_val)+". Area:  "+str(rtrn_circle_area(input_val))+".")
+   else:
+    rtrn_circle_area(input_val)
+    print("radius: "+str(input_val)+" area: "+str(rtrn_circle_area(input_val))+". ")
+
+   if __name__ == "__main__":
+    main()
+    
          
