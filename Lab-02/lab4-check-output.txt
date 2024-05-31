@@ -1,0 +1,2 @@
+INFO:root:logging test
+INFO:root:Test Run: 2024-05-31 02:04:08.018047
