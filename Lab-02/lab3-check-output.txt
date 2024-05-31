@@ -1,5 +1,5 @@
 INFO:root:logging test
-INFO:root:Test Run: 2024-05-30 23:48:56.342700
+INFO:root:Test Run: 2024-05-30 23:56:46.948636
 INFO:root:lab3a.py: test successful.
 INFO:root:lab3a.py 3026c8d76b822127253bb51ccb5a90df
 INFO:root:done.
@@ -9,13 +9,8 @@ INFO:root:done.
 INFO:root:lab3c.py: test successful.
 INFO:root:lab3c.py 04c16d707a36a65fd26ed62bc1eb6a1e
 INFO:root:done.
-ERROR:root:Traceback (most recent call last):
-  File "D:\Github\Classfile\Hasini-\Lab-02\lab3d.py", line 24, in <module>
-    user_input1 =input("Please enter a valid number between 1 and 10: ")
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-EOFError: EOF when reading a line
-
-WARNING:root:lab3d.py: Failures encountered.
+INFO:root:lab3d.py: test successful.
+INFO:root:lab3d.py df2716595a382882c56ccb6314d5b804
 INFO:root:done.
 INFO:root:lab3e.py: test successful.
 INFO:root:lab3e.py e49db1908d33e0853a9c66da2dcb8645
