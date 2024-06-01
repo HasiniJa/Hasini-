@@ -19,8 +19,10 @@ Exiting...
 import math
 
 #function calculating area of circle
-def rtrn_circle_area(radius):
+def circle_area(radius):
+
     return math.pi * radius ** 2
+
 
 def main():
     while True:
@@ -31,18 +33,18 @@ def main():
             break
         
         if not radius.replace('.', '', 1).isdigit():
-            print("Error. Out of bounds.")
+            print("Error. "+radius+" is not a number.")
             print("Enter a radius between 0 and 1999.")
             continue
         
         input_val = float(radius)
         
         if input_val < 0 or input_val > 1999:
-            print("Error. Out of bounds.")
+            print("Error.  "+input_val+" is out of range.")
             print("Enter a radius between 0 and 1999.")
         else:
-            area = rtrn_circle_area(input_val)
-            print(f"Radius: {input_val}, Area: {area}")
+            area = circle_area(input_val)
+            print(f"Radius: {input_val} ., Area: {area} .")
 
 if __name__ == "__main__":
     main()
