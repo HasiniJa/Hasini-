@@ -44,9 +44,9 @@ def main():
 
    else:
     rtrn_circle_area(input_val)
-    print("radius: "+str(input_val)+" area: "+str(rtrn_circle_area(input_val))+". ")
+    print(f"radius: {input_val}, area: {rtrn_circle_area(input_val)}")
 
-   if __name__ == "__main__":
+if __name__ == "__main__":
     main()
     
          
