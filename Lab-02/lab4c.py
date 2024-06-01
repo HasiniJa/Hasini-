@@ -26,26 +26,26 @@ def circle_area(radius):
 
 def main():
     while True:
-        radius = input("Enter a radius between 0 and 1999. Press Enter to exit: ")
+        radius = input("Enter a radius between 0 and 1999. Press Enter to exit: ")  #ask the user to input value
         
-        if radius == "":
+        if radius == "":                               # checks whether the user has clicked enter as the input value
             print("Program was Cancelled.")
             break
         
-        if not radius.replace('.', '', 1).isdigit():
-            print("Error. "+radius+" is not a number.")
+        if not radius.replace('.', '', 1).isdigit():    # checks whether the input value is not a numerical value
+            print("Error. "+radius+" is not a number.") # error message
             print("Enter a radius between 0 and 1999.")
             continue
         
-        input_val = float(radius)
+        input_val = float(radius)                       # converts the input value in to a float value.
         
-        if input_val < 0 or input_val > 1999:
+        if input_val < 0 or input_val > 1999:               # checks whether the input value is in the range
             print("Error.  "+input_val+" is out of range.")
             print("Enter a radius between 0 and 1999.")
         else:
-            area = circle_area(input_val)
-            print(f"Radius: {input_val} ., Area: {area} .")
+            area = circle_area(input_val)                     # calles the function to calcuate area
+            print(f"Radius: {input_val} ., Area: {area} .")   # print statement
 
-if __name__ == "__main__":
+if __name__ == "__main__":                                   # calling the function main
     main()
          
