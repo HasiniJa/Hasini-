@@ -24,7 +24,7 @@ animals = ['snake', 'hamster', 'scorpion', 'beaver', 'mosquito', 'camel', 'vultu
 secret=random.choice(animals)
 
 while True:
-    user_input= input("I'm thinking of an animal. Can you guess what it is? Enter a letter or a guess. Press enter to quit: ")
+    user_input= input("I'm thinking of an animal. Can you guess what it is? Enter a letter or a guess. Press enter to quit: ").strip().lower()
     
     if user_input ==" ":
       break
