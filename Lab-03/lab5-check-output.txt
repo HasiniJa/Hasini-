@@ -1,15 +1,16 @@
 INFO:root:logging test
-INFO:root:Test Run: 2024-06-07 12:37:19.061204
+INFO:root:Test Run: 2024-06-07 14:42:42.996098
 INFO:root:lab5a.py: test successful.
 INFO:root:lab5a.py c09413d4f5998c9d8bc8f1d50488bb27
 INFO:root:done.
-WARNING:root:lab5b.py: Failures encountered.
+INFO:root:lab5b.py: test successful.
+INFO:root:lab5b.py 7fbbe6d788474a317fc0243f5ef10130
 INFO:root:done.
 ERROR:root:Traceback (most recent call last):
-  File "D:\Github\Classfile\Hasini-\Lab-03\lab5c.py", line 24, in <module>
-    secret=animals(random.choice)
-           ^^^^^^^^^^^^^^^^^^^^^^
-TypeError: 'list' object is not callable
+  File "D:\Github\Classfile\Hasini-\Lab-03\lab5c.py", line 27, in <module>
+    user_input= input("I'm thinking of an animal. Can you guess what it is? Enter a letter or a guess. Press enter to quit: ")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+EOFError: EOF when reading a line
 
 WARNING:root:lab5c.py: Failures encountered.
 INFO:root:done.
@@ -17,7 +18,8 @@ INFO:root:lab5d.py: test successful.
 INFO:root:lab5d.py 03828000e64de6d3fbc72622acf6e738
 INFO:root:done.
 INFO:root:lab5e.py: test successful.
-INFO:root:lab5e.py 7bc8e0d1fdbc8bc4a34179ef0eb3385e
+INFO:root:lab5e.py 261ddd78210a961c303fa19efa5dd1bb
 INFO:root:done.
-WARNING:root:challenge5.py: Failures encountered.
+INFO:root:challenge5.py: test successful.
+INFO:root:challenge5.py c13990e0350bd868288064ec0ac0c5f9
 INFO:root:done.

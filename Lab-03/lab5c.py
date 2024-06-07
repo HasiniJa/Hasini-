@@ -21,7 +21,7 @@ You win!
 import random
 animals = ['snake', 'hamster', 'scorpion', 'beaver', 'mosquito', 'camel', 'vulture', 'horse', 'python', 'capybara' ]
 
-secret=animals(random.choice)
+secret=random.choice(animals)
 
 while True:
     user_input= input("I'm thinking of an animal. Can you guess what it is? Enter a letter or a guess. Press enter to quit: ")
