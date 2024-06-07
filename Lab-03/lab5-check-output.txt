@@ -1,5 +1,5 @@
 INFO:root:logging test
-INFO:root:Test Run: 2024-06-07 14:42:42.996098
+INFO:root:Test Run: 2024-06-07 15:01:21.164362
 INFO:root:lab5a.py: test successful.
 INFO:root:lab5a.py c09413d4f5998c9d8bc8f1d50488bb27
 INFO:root:done.
@@ -7,9 +7,11 @@ INFO:root:lab5b.py: test successful.
 INFO:root:lab5b.py 7fbbe6d788474a317fc0243f5ef10130
 INFO:root:done.
 ERROR:root:Traceback (most recent call last):
-  File "D:\Github\Classfile\Hasini-\Lab-03\lab5c.py", line 27, in <module>
-    user_input= input("I'm thinking of an animal. Can you guess what it is? Enter a letter or a guess. Press enter to quit: ")
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Github\Classfile\Hasini-\Lab-03\lab5c.py", line 49, in <module>
+    main()
+  File "D:\Github\Classfile\Hasini-\Lab-03\lab5c.py", line 29, in main
+    user_input= input("I'm thinking of an animal. Can you guess what it is? \nEnter a letter or a guess.Press enter to quit: ")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 EOFError: EOF when reading a line
 
 WARNING:root:lab5c.py: Failures encountered.

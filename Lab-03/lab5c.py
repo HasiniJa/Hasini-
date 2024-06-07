@@ -19,12 +19,14 @@ Enter a letter or a guess. Press enter to quit: camel
 You win! 
 '''
 import random
-animals = ['snake', 'hamster', 'scorpion', 'beaver', 'mosquito', 'camel', 'vulture', 'horse', 'python', 'capybara' ]
 
-secret=random.choice(animals)
+def main():
+ animals = ['snake', 'hamster', 'scorpion', 'beaver', 'mosquito', 'camel', 'vulture', 'horse', 'python', 'capybara']
 
-while True:
-    user_input= input("I'm thinking of an animal. Can you guess what it is? Enter a letter or a guess. Press enter to quit: ").strip().lower()
+ secret=random.choice(animals)
+
+ while True:
+    user_input= input("I'm thinking of an animal.Can you guess what it is? Enter a letter or a guess.Press enter to quit: ")
     
     if user_input ==" ":
       break
@@ -35,11 +37,14 @@ while True:
 
     elif len(user_input)== 1:
        if user_input in secret:
-          print("Yes, my word contains that letter. ")
+          print("Yes, my word contains that letter.")
 
        else:
-          print("Sorry, my word doesn't contain that letter. ")
+          print("Sorry, my word doesn't contain that letter.")
           
     else:
-       print("Sorry, that's not it. ")
+       print("Sorry, that's not it.")
+
+if __name__ == "__main__":
+   main()
     
