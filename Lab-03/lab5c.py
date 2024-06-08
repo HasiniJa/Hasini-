@@ -26,7 +26,7 @@ def main():
  secret=random.choice(animals)
 
  while True:
-    user_input= input("I'm thinking of an animal.Can you guess what it is? Enter a letter or a guess.Press enter to quit: ")
+    user_input= input("I'm thinking of an animal.Can you guess what it is? \nEnter a letter or a guess.Press enter to quit: ")
     
     if user_input ==" ":
       break
