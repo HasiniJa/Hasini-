@@ -43,12 +43,12 @@ while user_attempts > 0:
     print(''.join(secret_fruit))
     
     if '_' not in secret_fruit:
-      print("\nCongratulations! You've guessed the word.")
+      print("You win!.")
       break
-    user_guess = input("\nEnter a letter: ").strip().lower()
+    user_guess = input("Enter your guess: ").strip().lower()
         
-    if len(user_guess) != 1 or not user_guess.isalpha():
-            print("Please enter a single alphabetic character.")
+    if len(user_guess) != 1:
+            print("Please enter a single letter.")
             continue
 
     if user_guess in secret_fruit:
@@ -64,5 +64,5 @@ while user_attempts > 0:
             print(f"Sorry, {user_guess} is not in the word. You have {user_attempts} attempts left.")
 
     if user_attempts == 0:
-        print(f"\nGame over! The word was: {secret_fruit}")
+        print(f"Game over! The word was: {secret_fruit}")
 
