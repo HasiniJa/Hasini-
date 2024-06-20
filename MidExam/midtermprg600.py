@@ -1,9 +1,9 @@
 """
-Firstname: John
-Lastname: Doe
-Username: JohnDoe
-StudentID: 123456
-Email: johndoe@senecacollege.ca
+Firstname: Hasini
+Lastname: Jayasekara
+Username: hjayasekara
+StudentID: 165513235
+Email: hjayasekara@myseneca.ca
 """
 
 import sys
