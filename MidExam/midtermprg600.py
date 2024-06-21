@@ -9,6 +9,9 @@ Email: hjayasekara@myseneca.ca
 import sys
 from random import randint
 
+#dice rolling total storing list
+diceroll=[]
+
 # 1 Marks
 def rolldice():
     """
@@ -16,6 +19,19 @@ def rolldice():
     The function should also print output of the numbers generated (Eg: 6 and 6) 
     return: int:total (total of two random numbers) 
     """
+    #define the randome numbers
+    randdice1=randint(1,6)
+    randdice2=randint(1,6)
+
+    #total of the rolling values
+    totaldiceval=randdice1+randdice2
+
+    #printing the values
+    print(f"{randdice1}and {randdice2}")
+
+    #returning totalvalue
+    return totaldiceval
+
 # 1 Marks 
 def getplayers(): 
     """
@@ -24,6 +40,30 @@ def getplayers():
     If user entered invalid input for number of players (eg: string (a)) it throws an error and asks to retry 
     :return list:players (list of playernames entered by user)
     """
+  #defines player name list
+    player_names=[]
+    while True:
+     no_of_players= input("Please enter the number of players: ")
+     
+     #checks if the input is empty 
+     if no_of_players == "":
+       print("Invalid input please try again")
+       break
+
+     #checks if the user input is not a numerical value
+     elif not no_of_players.isnumeric():
+        print("Invalid input please try again")
+     else:
+        #convert the input in to a numeric value
+      player_count= int(no_of_players)
+
+     # for loop to iterate through the player names and add to the player name list
+     for i in range(player_count):
+          player_name = input(f"Please enter player #{i+1} name : ")
+          player_names.append(player_name)
+     return player_names
+
+  
 # 1 Marks 
 def getrounds(): 
     """
@@ -32,6 +72,25 @@ def getrounds():
     :return int:roundcount (number of rounds)
     """
     # Implement your function here
+    no_of_rounds= input("Please enter the number of rounds to play: ")
+
+
+    if no_of_rounds.strip() == "":
+       print("Invalid Input, Please try again")
+
+
+    if not no_of_rounds.isnumeric():
+       print("Invalid Input,Please try again")
+
+    round_count= int(no_of_rounds)
+
+
+    if round_count <=0:
+       print("Invalid Input,Please try again")
+    
+       
+    
+
 
 # 4 Marks 
 def setgame():
@@ -49,6 +108,20 @@ def setgame():
     roundcount = getrounds() # Calling getrounds and getting roundcount 
     # Implement your function here 
 
+    #initializing the game array 
+    game =[]
+
+    #adding the scores as a two dimention array 
+    for i in range(len(players)):
+       scores=[]
+       for j in range(roundcount):
+          scores.append(0)
+          game.append(scores)
+
+    gameset =[game,players,roundcount]
+
+    return gameset
+
 # 1 Marks 
 def asktoroll(player): 
     """
@@ -57,7 +130,22 @@ def asktoroll(player):
     :param string:player (player input is string called player name)
     :return int:score (Returns score from roll dice)
     """
-    # Implement your function here 
+    # Implement your function here
+    
+    print(f"{player} hit enter to roll the dice ")
+
+    while True:
+       #getting the user input
+       user_input=input()
+       
+       #checks user hits enter 
+       if user_input.strip() == "":
+          #calls rolldice function
+          score = rolldice()
+          #return score
+          return score
+
+    
 
 # 2 Marks 
 def findwinner(game, players):
@@ -69,6 +157,39 @@ def findwinner(game, players):
     :return string:winner (Winning players name as string)
     """ 
     # Implement your function here 
+
+    #initialize the highest score as 0
+    highestscore = 0
+    
+    #defining  an empty list to store the names of the winners
+    winner =[]
+
+     # iterate through the list of players
+    for i in range(len(players)):
+       
+       #calculate the total score of current player
+       totalscore =sum(game[i])
+ 
+       #checks if the total score from player is higher than the highest score
+       if totalscore > highestscore:
+          
+          #if it is updating the highest score with total score
+          highestscore=totalscore
+
+          #add the player to the winners list
+          winner =[players[i]]
+
+          #checks if have multiple winners with same score
+       elif totalscore == highestscore:
+          
+          #add them to the winners list
+          winner.append(players[i])
+          
+          #return winners names in a single string
+    return ", ".join(winner)
+       
+
+
 
 # 5 Marks 
 def rungame():
@@ -104,6 +225,8 @@ def printgame(game, players, roundnum, roundcount):
     The Stars and the Round title (End of Round) are calculated and aligned as number of rounds changes. 
     This function does not return anything
     """
+
+    
 
 def game():
     """
