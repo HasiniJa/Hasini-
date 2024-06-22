@@ -1,6 +1,6 @@
 INFO:root:logging test
-INFO:root:Test Run: 2024-06-21 20:25:54.324586
-INFO:root:midtermprg600-check.txt 8f5c4f5465906372e8a92f7e109886f3
+INFO:root:Test Run: 2024-06-21 20:50:00.090548
+INFO:root:midtermprg600-check.txt 881fefe2ba06bdbfcf5a13dd8ae29bc1
 INFO:root:
 INFO:root:
 INFO:root:<class '__main__.TestRollDice'>: test successful.

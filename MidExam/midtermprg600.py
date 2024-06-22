@@ -56,7 +56,7 @@ def getplayers():
 
       # for loop to iterate through the player names and add to the player name list
          for i in range(player_count):
-                  player_name = input(f"Please enter player #{i+1} name : ")
+                  player_name = input(f"Please enter player #{i+1} name: ")
                   player_names.append(player_name)
          return player_names
 
@@ -70,7 +70,7 @@ def getrounds():
     """
     # Implement your function here
     while True:
-        no_of_rounds = input("Please enter the number of rounds to play: ")
+        no_of_rounds = input("Please enter how many rounds the players wish to play: ")
 
         # Check if the input is empty or not a numerical value
         if no_of_rounds.strip() == "" or not no_of_rounds.isnumeric():
@@ -186,7 +186,7 @@ def rungame():
         
       choice = input("Would you like to play another game ?\n [1] Yes \n [2] No \n Your choice: ").strip().lower()
       if choice == "2":
-            print("Thank you for playing!")
+            print("Thank you and see you later!")
             break
 
 # 5 Marks
@@ -206,34 +206,35 @@ def printgame(game, players, roundnum, roundcount):
     This function does not return anything
     """
 
-    round_label_length = len(f"Round {roundcount}")# Calculate the length of the round label 
-    title_length = len(f" End of Round {roundnum} ")# Calculate the length of the title
+    # title 
+    title = f"Round {roundnum}"
+    total_length = len("Total")
 
-     # Calculate the total length of the table
-    total_length = (round_label_length + 2) * roundcount + 12  # +12 for " Total " and spaces
-    
-    # Print the top border
-    print("*" * total_length)
+    # Calculate the total length of the table from number of rounds
+    column_length = max(len(player) for player in players) + 2  # Adding  space for alignment
+    round_header_length = sum(len(f" Round {r+1} ") for r in range(roundcount)) + total_length + len(players)
+    total_length = max(round_header_length, len(title))
 
-    # Print the title
-    print(f"{' ' * ((total_length - title_length) // 2)} End of Round {roundnum} {' ' * ((total_length - title_length) // 2)}")
     
-    # Print the header
-    header = " " * 8 + "".join([f"Round {r:<{round_label_length}} " for r in range(1, roundcount + 1)]) + "Total"
+    # Print the title 
+    print(f"{"*" * ((total_length - len(title)) // 2)}{title}{"*" * ((total_length - len(title)) // 2)}")
+    
+    # Print the header row 
+    header = " " * column_length + "".join([f" Round {r+1} " for r in range(roundcount)]) + " Total"
     print(header)
     
     # Print each player's scores
     for i, player in enumerate(players):
-        row = f"{player:<8}"
+        row = f"{player:<{column_length}}"
         total_score = 0
         for j in range(roundcount):
             score = game[i][j] if j < roundnum else 0
-            row += f"{score:<{round_label_length + 2}}"
+            row += f"{score:<8}"
             total_score += score
         row += f"{total_score:<6}"
         print(row)
     
-     # Print the bottom border
+    # Print the bottom border 
     print("*" * total_length)
        
     
