@@ -179,7 +179,7 @@ def rungame():
                 #print(f"{player},{roundnum}.")
                 score = asktoroll(player)
                 game[j][roundnum - 1] = score
-                printgame(game, players, roundnum, roundcount)
+            printgame(game, players, roundnum, roundcount)
         
       winner = findwinner(game, players)
       print(f"Congratulations {winner}! You are our WINNER!")

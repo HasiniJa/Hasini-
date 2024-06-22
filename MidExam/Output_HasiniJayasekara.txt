@@ -9,125 +9,62 @@ Please enter player #4 name: Appld
 Please enter how many rounds the players wish to play: Three
 Invalid input, please try again.
 Please enter how many rounds the players wish to play: 3
-**************Round 0**************     
+**************Round 0**************
         Round 1  Round 2  Round 3  Total
-Appla  0       0       0       0
-Applb  0       0       0       0
-Applc  0       0       0       0
-Appld  0       0       0       0
+Appla  0       0       0       0     
+Applb  0       0       0       0     
+Applc  0       0       0       0     
+Appld  0       0       0       0     
 ************************************
 Round 1 starts.
 Appla! Hit enter once you are ready to roll your dices!
-1 and 6
-**************Round 1**************
-        Round 1  Round 2  Round 3  Total
-Appla  7       0       0       7
-Applb  0       0       0       0
-Applc  0       0       0       0
-Appld  0       0       0       0
-************************************
+4 and 4
 Applb! Hit enter once you are ready to roll your dices!
-1 and 1
-**************Round 1**************
-        Round 1  Round 2  Round 3  Total
-Appla  7       0       0       7
-Applb  2       0       0       2
-Applc  0       0       0       0
-Appld  0       0       0       0
-************************************
+6 and 3
 Applc! Hit enter once you are ready to roll your dices!
-4 and 3
-**************Round 1**************
-        Round 1  Round 2  Round 3  Total
-Appla  7       0       0       7
-Applb  2       0       0       2
-Applc  7       0       0       7
-Appld  0       0       0       0
-************************************
+3 and 5
 Appld! Hit enter once you are ready to roll your dices!
 3 and 6
 **************Round 1**************
         Round 1  Round 2  Round 3  Total
-Appla  7       0       0       7
-Applb  2       0       0       2
-Applc  7       0       0       7
+Appla  8       0       0       8
+Applb  9       0       0       9
+Applc  8       0       0       8
 Appld  9       0       0       9
 ************************************
 Round 2 starts.
 Appla! Hit enter once you are ready to roll your dices!
-5 and 4
-**************Round 2**************
-        Round 1  Round 2  Round 3  Total
-Appla  7       9       0       16
-Applb  2       0       0       2
-Applc  7       0       0       7
-Appld  9       0       0       9
-************************************
-Applb! Hit enter once you are ready to roll your dices!
 6 and 2
-**************Round 2**************
-        Round 1  Round 2  Round 3  Total
-Appla  7       9       0       16
-Applb  2       8       0       10
-Applc  7       0       0       7
-Appld  9       0       0       9
-************************************
+Applb! Hit enter once you are ready to roll your dices!
+5 and 5
 Applc! Hit enter once you are ready to roll your dices!
-4 and 4
-**************Round 2**************
-        Round 1  Round 2  Round 3  Total
-Appla  7       9       0       16
-Applb  2       8       0       10
-Applc  7       8       0       15
-Appld  9       0       0       9
-************************************
+6 and 4
 Appld! Hit enter once you are ready to roll your dices!
-6 and 6
+3 and 1
 **************Round 2**************
         Round 1  Round 2  Round 3  Total
-Appla  7       9       0       16
-Applb  2       8       0       10
-Applc  7       8       0       15
-Appld  9       12      0       21
+Appla  8       8       0       16
+Applb  9       10      0       19
+Applc  8       10      0       18
+Appld  9       4       0       13
 ************************************
 Round 3 starts.
 Appla! Hit enter once you are ready to roll your dices!
-1 and 1
-**************Round 3**************
-        Round 1  Round 2  Round 3  Total
-Appla  7       9       2       18
-Applb  2       8       0       10
-Applc  7       8       0       15
-Appld  9       12      0       21
-************************************
+6 and 3
 Applb! Hit enter once you are ready to roll your dices!
-6 and 1
-**************Round 3**************
-        Round 1  Round 2  Round 3  Total
-Appla  7       9       2       18
-Applb  2       8       7       17
-Applc  7       8       0       15
-Appld  9       12      0       21
-************************************
+1 and 4
 Applc! Hit enter once you are ready to roll your dices!
-5 and 5
-**************Round 3**************
-        Round 1  Round 2  Round 3  Total
-Appla  7       9       2       18
-Applb  2       8       7       17
-Applc  7       8       10      25
-Appld  9       12      0       21
-************************************
+1 and 6
 Appld! Hit enter once you are ready to roll your dices!
-2 and 3
+2 and 5
 **************Round 3**************
         Round 1  Round 2  Round 3  Total
-Appla  7       9       2       18
-Applb  2       8       7       17
-Applc  7       8       10      25
-Appld  9       12      5       26
+Appla  8       8       9       25
+Applb  9       10      5       24
+Applc  8       10      7       25
+Appld  9       4       7       20
 ************************************
-Congratulations Appld! You are our WINNER!
+Congratulations Appla,Applc! You are our WINNER!
 Would you like to play another game ?
  [1] Yes
  [2] No
@@ -145,58 +82,34 @@ Orangc  0       0       0
 **************************
 Round 1 starts.
 Oranga! Hit enter once you are ready to roll your dices!
-3 and 3
-*********Round 1*********
-         Round 1  Round 2  Total
-Oranga  6       0       6
-Orangb  0       0       0
-Orangc  0       0       0
-**************************
+2 and 6
 Orangb! Hit enter once you are ready to roll your dices!
-5 and 3
-*********Round 1*********
-         Round 1  Round 2  Total
-Oranga  6       0       6
-Orangb  8       0       8
-Orangc  0       0       0
-**************************
+1 and 4
 Orangc! Hit enter once you are ready to roll your dices!
-4 and 3
+1 and 3
 *********Round 1*********
          Round 1  Round 2  Total
-Oranga  6       0       6
-Orangb  8       0       8
-Orangc  7       0       7
+Oranga  8       0       8
+Orangb  5       0       5
+Orangc  4       0       4
 **************************
 Round 2 starts.
 Oranga! Hit enter once you are ready to roll your dices!
 5 and 6
-*********Round 2*********
-         Round 1  Round 2  Total
-Oranga  6       11      17
-Orangb  8       0       8
-Orangc  7       0       7
-**************************
 Orangb! Hit enter once you are ready to roll your dices!
-6 and 5
-*********Round 2*********
-         Round 1  Round 2  Total
-Oranga  6       11      17
-Orangb  8       11      19
-Orangc  7       0       7
-**************************
+3 and 2
 Orangc! Hit enter once you are ready to roll your dices!
-1 and 2
+4 and 4
 *********Round 2*********
          Round 1  Round 2  Total
-Oranga  6       11      17
-Orangb  8       11      19
-Orangc  7       3       10
+Oranga  8       11      19
+Orangb  5       5       10
+Orangc  4       8       12
 **************************
-Congratulations Orangb! You are our WINNER!
+Congratulations Oranga! You are our WINNER!
 Would you like to play another game ?
  [1] Yes
  [2] No
  Your choice: 2
 Thank you and see you later!
-PS D:\Github\Classfile\Hasini->
+PS D:\Github\Classfile\Hasini-> 

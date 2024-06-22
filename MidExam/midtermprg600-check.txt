@@ -1,6 +1,6 @@
 INFO:root:logging test
-INFO:root:Test Run: 2024-06-21 20:50:00.090548
-INFO:root:midtermprg600-check.txt 881fefe2ba06bdbfcf5a13dd8ae29bc1
+INFO:root:Test Run: 2024-06-21 22:24:05.636369
+INFO:root:midtermprg600-check.txt 9316e3e42f0b2eeafcf7d7d5c96c54e6
 INFO:root:
 INFO:root:
 INFO:root:<class '__main__.TestRollDice'>: test successful.
@@ -21,10 +21,9 @@ INFO:root:done.
 INFO:root:<class '__main__.TestFindWinner'>: test successful.
 INFO:root:<class '__main__.TestFindWinner'>: 2 Marks Awarded - (This is further evaluated after submission and might change after revewing your code).
 INFO:root:done.
-WARNING:root:<class '__main__.TestRunGame'>: Failures encountered.
-WARNING:root:This does not mean your code is not working. Attach a screenshot of the error you see in your terminal when you run this check script, along with you manual testing screenshot covering all cases in the answerdocument_username.pdf.
-WARNING:root:To get most points provide proper inline comments and details of what you function does and each line of code does
+INFO:root:<class '__main__.TestRunGame'>: test successful.
+INFO:root:<class '__main__.TestRunGame'>: 5 Marks Awarded - (This is further evaluated after submission and might change after revewing your code).
 INFO:root:done.
 INFO:root:<class '__main__.TestPrintGame'>: Undecided Provide Screenshots and Recordings.
 INFO:root:done.
-INFO:root:Your total is 10
+INFO:root:Your total is 15
