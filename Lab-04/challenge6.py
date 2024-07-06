@@ -14,20 +14,21 @@ def main():
     filename = sys.argv[1]
 
     try:
-        # Open the file for reading
+        # Open the file 
         file= open(filename, 'r') 
-        lines = file.readlines()
+        lines = file.readlines() # Read all lines from the file
 
+# Process each line to find the highest alphabetical character
         for line in lines:
-            max_char = ''
+            max_char = '' # Initialize the variable to store the maximum character
             for char in line:
-                if char.isalpha():
+                if char.isalpha(): # Check if the character is a letter
                     # Convert to lower case
                     char = char.lower()
                     if max_char == '' or char > max_char:
-                        max_char = char
+                        max_char = char # Update the maximum character if current is greater
 
-            if max_char:
+            if max_char: # If a maximum character was found, print it
                 print(max_char)
 
     except FileNotFoundError:

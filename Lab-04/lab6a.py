@@ -8,7 +8,7 @@ data_to_write = ['First Line!', 'Second Line!!', 'Third Line!!!', '...and so on!
 
 f = open('testing.txt', 'w') 
 
-    # Loop through each element in the data_to_write list
+    # Loop through each element 
 for line in data_to_write:
         # Write each element to the file,in a new line
         f.write(line + '\n')
