@@ -1,3 +1,9 @@
+'''
+Student Name : Hasini Jayasekara
+Student ID : 165513235
+Lab 07: 
+'''
+
 from lab7b import print_meal_plan
 
 # Define the template dictionary

@@ -1,10 +1,10 @@
-# lab7b.py
+'''
+Student Name : Hasini Jayasekara
+Student ID : 165513235
+Lab 07: 
+'''
 
-meal_plan = {
-    'Breakfast': 'oatmeal',
-    'Lunch': 'sandwiches',
-    'Dinner': 'broccoli'
-}
+meal_plan = {'Breakfast': 'oatmeal', 'Lunch': 'sandwiches', 'Dinner': 'broccoli'} 
 
 def print_meal_plan(meal_plan):
     """
@@ -25,5 +25,6 @@ def print_meal_plan(meal_plan):
 
 # Sample usage
 if __name__ == "__main__":
-    # Call the function to print the meal plan
-    print_meal_plan(meal_plan)
+    # Define a sample meal plan
+  meal_plan = {'Breakfast': 'oatmeal', 'Lunch': 'sandwiches', 'Dinner': 'broccoli'} 
+  print_meal_plan(meal_plan)
