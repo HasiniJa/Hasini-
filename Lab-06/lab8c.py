@@ -5,7 +5,7 @@ Student ID: 165513235
 import os
 
 def check_internet():
-    # Check internet connectivity by pinging Google
+    # Check internet connectivity
     response = os.system("ping -c 4 google.com" if os.name != 'nt' else "ping -n 4 google.com")
     
     if response == 0:
